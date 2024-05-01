@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="668.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLEmployeeBonusController">
+   <children>
+      <Label layoutX="23.0" layoutY="194.0" prefHeight="43.0" prefWidth="886.0" text="                     Distribute Employee Bonus">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="728.0" layoutY="522.0" mnemonicParsing="false" onAction="#submitOnClick" prefHeight="43.0" prefWidth="100.0" text="Submit">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="133.0" layoutY="585.0" mnemonicParsing="false" onAction="#goBackOnClick" prefHeight="43.0" prefWidth="92.0" text="Back" />
+      <Button layoutX="732.0" layoutY="585.0" mnemonicParsing="false" onAction="#logoutOnClick" prefHeight="43.0" prefWidth="92.0" text="Log Out" />
+      <Line endX="866.0" layoutX="106.0" layoutY="159.0" startX="-100.0" strokeWidth="3.0" />
+      <Label layoutX="164.0" layoutY="38.0" prefHeight="77.0" prefWidth="651.0" text="Bangladesh Football Federation" textAlignment="CENTER" textFill="#123e65">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="141.0" layoutX="5.0" layoutY="4.0">
+         <image>
+            <Image url="@../../../../../Downloads/379322149_697982758344886_6225071315552295712_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="251.0" text="Employee ID:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeIdTextField1" layoutX="475.0" layoutY="257.0" />
+      <Label layoutX="256.0" layoutY="315.0" text="Account No.:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="acoountNoTextField" layoutX="475.0" layoutY="321.0" />
+      <Label layoutX="260.0" layoutY="389.0" text="Bonus Amount:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bonusAmountTextField1" layoutX="475.0" layoutY="395.0" />
+      <Label layoutX="260.0" layoutY="455.0" text="Department:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="departmentComboBox" layoutX="473.0" layoutY="455.0" prefHeight="36.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

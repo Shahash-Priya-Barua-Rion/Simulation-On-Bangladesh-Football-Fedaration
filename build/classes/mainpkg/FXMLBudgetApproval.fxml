@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLBudgetApprovalController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="579.0" prefWidth="795.0" />
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="579.0" prefWidth="795.0">
+         <children>
+            <Label layoutX="300.0" layoutY="168.0" text="Budget Approval">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="appointmentTableView" layoutX="76.0" layoutY="221.0" prefHeight="211.0" prefWidth="671.0">
+               <columns>
+                  <TableColumn fx:id="markettingCostTableViewTableView" prefWidth="163.0" text="Marketting Cost" />
+                  <TableColumn fx:id="foodCostTableView" prefWidth="127.0" text="Food Cost" />
+                  <TableColumn fx:id="volunteerCostTableView" prefWidth="149.0" text="Volunteer Cost" />
+                  <TableColumn fx:id="staffTableView" prefWidth="114.0" text="Staff" />
+                  <TableColumn fx:id="transportCostTableView" prefWidth="117.0" text="Trasport Cost" />
+               </columns>
+            </TableView>
+            <Button layoutX="366.0" layoutY="481.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
+            <Button layoutX="645.0" layoutY="481.0" mnemonicParsing="false" onAction="#logOutOnClick" text="LogOut" />
+            <Button layoutX="66.0" layoutY="481.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="153.0" layoutY="34.0" text="Bangladesh Football Federation">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="139.0" fitWidth="126.0" layoutX="20.0" layoutY="20.0">
+         <image>
+            <Image url="@../../../../../Downloads/379322149_697982758344886_6225071315552295712_n.png" />
+         </image>
+      </ImageView>
+      <Line endX="597.0" layoutX="210.0" layoutY="166.0" startX="-200.0" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

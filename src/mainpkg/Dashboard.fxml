@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="1088.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DashboardController">
+   <children>
+      <Label layoutX="105.0" layoutY="18.0" prefHeight="69.0" prefWidth="402.0" text="Bangladesh Football Fedaration" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="105.0" fitWidth="92.0">
+         <image>
+            <Image url="@../../../../BFF.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="153.0" />
+      <MenuBar fx:id="dashboardMenubar" layoutY="119.0" prefHeight="42.0" prefWidth="1088.0" style="-fx-background-color: #0091ea;">
+        <menus>
+          <Menu fx:id="executiveMenu" mnemonicParsing="false" text="Executives">
+            <items>
+                  <Menu fx:id="exeReportsMenu" mnemonicParsing="false" text="Reports">
+                    <items>
+                    <MenuItem mnemonicParsing="false" onAction="#playerRegistrationButtonOnClicked" text="Player Registration" />
+                        <MenuItem mnemonicParsing="false" onAction="#matchScheduleButtonOnClicked" text="Match Scedules" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#decisionMakingButtonOnClicked" text="Decision Making" />
+                  <MenuItem mnemonicParsing="false" onAction="#communicateButtonOnClicked" text="Communicate" />
+                  <MenuItem mnemonicParsing="false" onAction="#financialManagementButtonOnClicked" text="Financial Management" />
+                  <MenuItem mnemonicParsing="false" onAction="#legalAffairsButtonOnClicked" text="Legal Affairs" />
+                  <Menu fx:id="exeApprovalMenu" mnemonicParsing="false" text="Approval">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#transferButtonOnClicked" text="Transfer" />
+                        <MenuItem mnemonicParsing="false" onAction="#contractsButtonOnClicked" text="Contracts" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#eventManagementButtonOnClicked" text="Event Management" />
+                  <MenuItem mnemonicParsing="false" onAction="#disciplinaryMattersButtonOnClicked" text="Disciplinary Matters" />
+            </items>
+          </Menu>
+          <Menu fx:id="medicalDeptMenu" mnemonicParsing="false" text="Medical Dept.">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#medPlayerRegistrationButtonOnClicked" text="Medical Player Registration" />
+                  <MenuItem mnemonicParsing="false" onAction="#medHistoryRecordButtonOnClicked" text="Medical History Record" />
+                  <MenuItem mnemonicParsing="false" onAction="#bookAppointmentButtonOnClick" text="Book Appointment" />
+                  <MenuItem mnemonicParsing="false" onAction="#injuryLogButtonOnClicked" text="Injury Log" />
+                  <MenuItem mnemonicParsing="false" onAction="#prescribeMedicineButtonOnClicked" text="Prescribe Medicine" />
+                  <MenuItem mnemonicParsing="false" onAction="#healthControlGuidelineButtonOnClicked" text="Health Control Guideline" />
+                  <MenuItem mnemonicParsing="false" onAction="#returnToPlayButtonOnClicked" text="Player Return-to-Play Assessment" />
+                  <MenuItem mnemonicParsing="false" onAction="#inventoryManagementButtonOnClicked" text="Inventory Management" />
+            </items>
+          </Menu>
+          <Menu fx:id="playerMenu" mnemonicParsing="false" text="Player">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#playerMatchScheduleButtonOnClicked" text="Match Schedule" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerPracticeTimeScheduleButtonOnClicked" text="Practice Time Schedule" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerSalaryStatusButtonOnClicked" text="Salary Status" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerLeaveApplicationButtonOnClicked" text="Leave Application" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerViewFeedbackButtonOnClicked" text="View Feedback" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerNoticeBoardButtonOnClicked" text="Notice Board" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerPressandMediaConferenceButtonOnClicked" text="Press and Media Conference" />
+                  <MenuItem mnemonicParsing="false" onAction="#playerAppointmentForMedicalCheckupButtonOnClicked" text="Appointment for Medical Checkup" />
+               </items>
+          </Menu>
+            <Menu fx:id="competitionOrganizationDeptMenu" mnemonicParsing="false" text="Competition Organizing Dept.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#comMatchDetailsButtonOnClicked" text="Match Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#comTicketPricingButtonOnClicked" text="Ticket Pricing" />
+                  <MenuItem mnemonicParsing="false" onAction="#comTickedSoldButtonOnClicked" text="Ticked Sold" />
+                  <MenuItem mnemonicParsing="false" onAction="#comPlayerListButtonOnClicked" text="Player List" />
+                  <MenuItem mnemonicParsing="false" onAction="#comApprovalforBudgetButtonOnClicked" text="Approval for Budget" />
+                  <MenuItem mnemonicParsing="false" onAction="#comNotificationofUpcomingMatchButtonOnClicked" text="Notification about the upcoming matches" />
+                  <MenuItem mnemonicParsing="false" onAction="#comRecandManageVolunteersButtonOnClicked" text="Recruit and Manage Volunteers" />
+                  <MenuItem mnemonicParsing="false" onAction="#comLeaveApplicationButtonOnClicked" text="Leave Application" />
+              </items>
+            </Menu>
+            <Menu fx:id="financialDeptMenu" mnemonicParsing="false" text="Finance Dept.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#employeeSalaryButtonOnClicked" text="Employee Salary" />
+                  <MenuItem mnemonicParsing="false" onAction="#employeeBonusButtonOnClicked" text="Employee Bonus" />
+                  <MenuItem mnemonicParsing="false" onAction="#decideBudgetButtonOnClicked" text="Decide Budgets" />
+                  <MenuItem mnemonicParsing="false" onAction="#monthlyReportButtonOnClicked" text="Monthly Report" />
+                  <MenuItem mnemonicParsing="false" onAction="#tickedSellsReportButtonOnClicked" text="Ticket Sells Report" />
+                  <MenuItem mnemonicParsing="false" onAction="#finLeaveApplicationButtonOnClicked" text="Leave Application" />
+                  <MenuItem mnemonicParsing="false" onAction="#finNoticeBoardButtonOnClicked" text="Notice Board" />
+                  <MenuItem mnemonicParsing="false" onAction="#finReceiveSalaryButtonOnClicked" text="Receive Salary" />
+              </items>
+            </Menu>
+            <Menu fx:id="mediaDeptMenu" mnemonicParsing="false" text="Media Dept.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#sendNotificationButtonOnClicked" text="Send Notification" />
+                  <MenuItem mnemonicParsing="false" onAction="#messageInterviewerButtonOnClicked" text="Message Interviewers" />
+                  <MenuItem mnemonicParsing="false" onAction="#socialMediaButtonOnClicked" text="Social Media" />
+                  <MenuItem mnemonicParsing="false" onAction="#mediaNoticeBoardButtonOnClicked" text="Notice Board" />
+                  <MenuItem mnemonicParsing="false" onAction="#mediaGetNotificationButtonOnClicked" text="Get Notification" />
+                  <MenuItem mnemonicParsing="false" onAction="#mediaDailyUpdatesButtonOnClicked" text="Daily Updates" />
+                  <MenuItem mnemonicParsing="false" onAction="#mediaLeaveApplicationButtonOnClicked" text="Leave Application" />
+                  <MenuItem mnemonicParsing="false" onAction="#mediaReceiveSalaryButtonOnClicked" text="Receive Salary" />
+              </items>
+            </Menu>
+            <Menu fx:id="coachMenu" mnemonicParsing="false" text="Coach">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu fx:id="developementDeptMenu" mnemonicParsing="false" text="Development Dept.">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#logoutButtonOnClicked" text="Logout">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

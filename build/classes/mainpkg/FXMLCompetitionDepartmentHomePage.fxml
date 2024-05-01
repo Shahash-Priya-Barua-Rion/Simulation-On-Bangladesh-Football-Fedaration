@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLCompetitionDepartmentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="913.0">
+         <children>
+            <Label layoutX="-1.0" prefHeight="79.0" prefWidth="918.0" text="                       Competition Department Home Page" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button layoutX="315.0" layoutY="89.0" mnemonicParsing="false" onAction="#matchDetailsOnClick" prefHeight="58.0" prefWidth="292.0" text="Match Details" />
+            <Button layoutX="316.0" layoutY="172.0" mnemonicParsing="false" onAction="#TicketPricingOnClick" prefHeight="58.0" prefWidth="292.0" text="Ticket Pricing" />
+            <Button layoutX="316.0" layoutY="244.0" mnemonicParsing="false" onAction="#TicketSoldOnClick" prefHeight="58.0" prefWidth="292.0" text="Ticket Sold" />
+            <Button layoutX="318.0" layoutY="328.0" mnemonicParsing="false" onAction="#playerListOnClick" prefHeight="58.0" prefWidth="292.0" text="Player List" />
+            <Button layoutX="315.0" layoutY="418.0" mnemonicParsing="false" onAction="#budgetApproveOnClick" prefHeight="58.0" prefWidth="292.0" text="Approval for budget" />
+            <Button layoutX="315.0" layoutY="504.0" mnemonicParsing="false" onAction="#notificationOnClick" prefHeight="58.0" prefWidth="286.0" text="Notification about the upcoming Matches" />
+            <Button layoutX="315.0" layoutY="589.0" mnemonicParsing="false" onAction="#recruiteManageVolunteersOnClick" prefHeight="58.0" prefWidth="286.0" text="Recruite and Manage Volunteers" />
+            <Button layoutX="315.0" layoutY="679.0" mnemonicParsing="false" onAction="#leaveApplicationOnClick" prefHeight="58.0" prefWidth="286.0" text="Leave Application" />
+            <Button layoutX="42.0" layoutY="693.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+            <Button layoutX="798.0" layoutY="693.0" mnemonicParsing="false" onAction="#logOutOnClick" text="Log Out" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

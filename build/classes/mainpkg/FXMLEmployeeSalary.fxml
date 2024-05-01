@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLEmployeeSalaryController">
+   <children>
+      <Label layoutY="176.0" prefHeight="67.0" prefWidth="867.0" text="                           Employee Salary">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="395.0" text="Department:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="departmentComboBox" layoutX="377.0" layoutY="399.0" prefHeight="36.0" prefWidth="187.0" />
+      <Label layoutX="169.0" layoutY="339.0" text="Account No.:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="acoountNoTextField" layoutX="384.0" layoutY="345.0" />
+      <Button layoutX="334.0" layoutY="528.0" mnemonicParsing="false" onAction="#submitOnClick" prefHeight="43.0" prefWidth="100.0" text="Submit">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="103.0" layoutY="609.0" mnemonicParsing="false" onAction="#goBackOnClick" prefHeight="43.0" prefWidth="92.0" text="Back" />
+      <Button layoutX="595.0" layoutY="609.0" mnemonicParsing="false" onAction="#logoutOnClick" prefHeight="43.0" prefWidth="92.0" text="Log Out" />
+      <Label layoutX="167.0" layoutY="278.0" text="Employee ID:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeIdTextField1" layoutX="384.0" layoutY="284.0" />
+      <Line endX="866.0" layoutX="118.0" layoutY="165.0" startX="-100.0" strokeWidth="3.0" />
+      <Label layoutX="176.0" layoutY="44.0" prefHeight="77.0" prefWidth="651.0" text="Bangladesh Football Federation" textAlignment="CENTER" textFill="#123e65">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="141.0" layoutX="17.0" layoutY="10.0">
+         <image>
+            <Image url="@../../../../../Downloads/379322149_697982758344886_6225071315552295712_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

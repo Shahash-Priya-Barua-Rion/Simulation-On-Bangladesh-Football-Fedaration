@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TicketSoldEnterController">
+   <children>
+      <Label layoutX="114.0" layoutY="245.0" text="Transaction Amount:">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="630.0" layoutY="533.0" mnemonicParsing="false" onAction="#logOutOnClick" text="LogOut" />
+      <Label layoutX="143.0" layoutY="24.0" text="Bangladesh Football Federation">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TransactionTextField" layoutX="449.0" layoutY="245.0" prefHeight="40.0" prefWidth="216.0" />
+      <ImageView fitHeight="139.0" fitWidth="126.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@../../../../../Downloads/379322149_697982758344886_6225071315552295712_n.png" />
+         </image>
+      </ImageView>
+      <Line endX="597.0" layoutX="200.0" layoutY="156.0" startX="-200.0" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

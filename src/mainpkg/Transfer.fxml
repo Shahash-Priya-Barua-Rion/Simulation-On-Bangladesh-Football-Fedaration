@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="659.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TransferController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="92.0">
+         <image>
+            <Image url="@../../../../BFF.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="96.0" layoutY="18.0" prefHeight="69.0" prefWidth="402.0" text="Bangladesh Football Fedaration" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="946.171630859375" endY="-24.0" layoutX="144.0" layoutY="138.0" startX="-142.0" startY="-24.0" strokeWidth="4.0" />
+      <TableView fx:id="transferTableView" layoutX="5.0" layoutY="154.0" prefHeight="279.0" prefWidth="1083.0">
+        <columns>
+          <TableColumn fx:id="playerTableColumn" prefWidth="296.0" text="Player" />
+          <TableColumn fx:id="fromClubTableColumn" prefWidth="247.0" text="From Club" />
+            <TableColumn fx:id="toClubTableColumn" prefWidth="240.0" text="To Club" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="299.0" text="Status" />
+        </columns>
+      </TableView>
+      <Text layoutX="14.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer Table">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="472.0" mnemonicParsing="false" onAction="#approveTransferButtonOnClicked" text="Approve">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="498.0" layoutY="472.0" mnemonicParsing="false" onAction="#rejectTransferButtonOnClicked" text="Reject">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="approvalStatusLabel" layoutX="7.0" layoutY="526.0" prefHeight="105.0" prefWidth="1076.0" style="-fx-background-color: #a7ffeb;" textAlignment="CENTER" />
+      <Button layoutX="1010.0" layoutY="472.0" mnemonicParsing="false" onAction="#backButtonOnClicked" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

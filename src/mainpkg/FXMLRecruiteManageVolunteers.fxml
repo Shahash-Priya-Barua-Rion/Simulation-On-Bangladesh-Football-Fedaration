@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="811.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLRecruiteManageVolunteersController">
+   <children>
+      <Label layoutX="236.0" layoutY="14.0" text="Recruite and Manage Volunteers">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="101.0" text="New Applicant Volunteer List:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="406.0" text="Experienced Volunteer List:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="newTableview" layoutX="22.0" layoutY="141.0" prefHeight="229.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="nameTableView" prefWidth="219.0" text="Applicant Name:" />
+          <TableColumn fx:id="genderTableView" prefWidth="121.0" text="Gender:" />
+            <TableColumn fx:id="ageTableView" prefWidth="100.0" text="Age:" />
+            <TableColumn fx:id="experienceTableView" prefWidth="235.0" text="Volunteering Experience:" />
+        </columns>
+      </TableView>
+      <TableView fx:id="experiencedTableview" layoutX="37.0" layoutY="444.0" prefHeight="229.0" prefWidth="676.0">
+         <columns>
+            <TableColumn fx:id="nameTableView" prefWidth="219.0" text="Applicant Name:" />
+            <TableColumn fx:id="ageTableView" prefWidth="100.0" text="Age:" />
+            <TableColumn fx:id="genderTableView" prefWidth="121.0" text="Gender:" />
+            <TableColumn fx:id="experienceTableView" prefWidth="235.0" text="Volunteering Experience:" />
+         </columns>
+      </TableView>
+      <Button layoutX="471.0" layoutY="743.0" mnemonicParsing="false" onAction="#saveOnClick" text="Save" />
+      <Button layoutX="37.0" layoutY="743.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="841.0" layoutY="743.0" mnemonicParsing="false" onAction="#logOutOnClick" text="LogOut" />
+   </children>
+</AnchorPane>

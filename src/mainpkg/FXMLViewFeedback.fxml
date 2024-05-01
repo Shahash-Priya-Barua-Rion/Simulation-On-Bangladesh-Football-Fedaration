@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="helpfulRadioButton" prefHeight="605.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLViewFeedbackController">
+   <children>
+      <Label layoutX="285.0" layoutY="14.0" prefHeight="45.0" prefWidth="221.0" text=" View Feedback">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="feedbackTableArea" layoutX="43.0" layoutY="106.0" prefHeight="296.0" prefWidth="713.0" text="Feedback:" />
+      <Button layoutX="34.0" layoutY="527.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="689.0" layoutY="527.0" mnemonicParsing="false" onAction="#logOutOnClick" text="Log Out" />
+      <Button layoutX="342.0" layoutY="527.0" mnemonicParsing="false" onAction="#askForAdviceOnClick" text="Ask for Advice" />
+      <RadioButton layoutX="43.0" layoutY="442.0" mnemonicParsing="false" text="Helpful" />
+   </children>
+</AnchorPane>
